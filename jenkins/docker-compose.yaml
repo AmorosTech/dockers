@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  jenkins:
+    build: .
+    image: registry.cn-shanghai.aliyuncs.com/amoros/jenkins:lts-alpine
+

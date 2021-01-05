@@ -1,0 +1,5 @@
+version: "2"
+services:
+  chrome-selenium:
+    image: registry.cn-shanghai.aliyuncs.com/amoros/chrome-selenium:0.1-alpine
+    container_name: chrome-selenium

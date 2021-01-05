@@ -1,0 +1,6 @@
+version: "3.7"
+services:
+  openjdk:
+    build: .
+    image: registry.cn-shanghai.aliyuncs.com/amoros/openjdk:8-alpine
+
