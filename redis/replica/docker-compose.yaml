@@ -1,0 +1,19 @@
+version: "2"
+services:
+  redis:
+    image: redis:6.2.1-alpine
+    container_name: redis
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./:/data/
+    command: redis-server /data/conf/redis.conf
+
+  sentinel:
+    image: redis:6.2.1-alpine
+    container_name: redis-sentinel
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./:/data/
+    command: redis-sentinel /data/conf/sentinel.conf

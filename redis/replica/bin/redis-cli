@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it redis:6.2.1-alpine redis-cli $@

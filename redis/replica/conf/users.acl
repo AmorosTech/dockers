@@ -1,0 +1,3 @@
+user default +@all ~* &* on >yourpassword
+user replica +psync +replconf +ping on >replicapassword
+user senti +client +subscribe +publish +ping +info +multi +slaveof +config +client +exec on >setipassword
